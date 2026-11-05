@@ -1,0 +1,95 @@
+{
+  "complete": true,
+  "old_total": 35,
+  "new_total": 35,
+  "seven_models": [
+    "C00_WORD_ONLY",
+    "C02_FLAT_CNN_ONLY",
+    "C03_TFIDF_ONLY",
+    "C04_WORD_CNN",
+    "C05_WORD_TFIDF",
+    "C06_CNN_TFIDF",
+    "F06_PARALLEL_FLAT_CNN"
+  ],
+  "seeds": [
+    42,
+    2026,
+    3407,
+    123,
+    777
+  ],
+  "n_test": 2589,
+  "new_dataset_sha256": "d05306c5f89a56eca4471d58fd7caab6f881654ad8ece502e9f7d98e376fd29f",
+  "new_protocol_sha256": "43bc34b0e2d7b7a2eef2d22bc7b01836dfdfd999dcd3b966793c31425189f13b",
+  "matched_test_articles_and_labels": [
+    {
+      "seed": 42,
+      "matched_article_ids": true,
+      "matched_labels": true,
+      "n_test": 2589
+    },
+    {
+      "seed": 2026,
+      "matched_article_ids": true,
+      "matched_labels": true,
+      "n_test": 2589
+    },
+    {
+      "seed": 3407,
+      "matched_article_ids": true,
+      "matched_labels": true,
+      "n_test": 2589
+    },
+    {
+      "seed": 123,
+      "matched_article_ids": true,
+      "matched_labels": true,
+      "n_test": 2589
+    },
+    {
+      "seed": 777,
+      "matched_article_ids": true,
+      "matched_labels": true,
+      "n_test": 2589
+    }
+  ],
+  "account_archives": [
+    {
+      "account": 1,
+      "rows": 14,
+      "seeds": [
+        42,
+        2026
+      ],
+      "models": 7,
+      "dataset_sha256": "d05306c5f89a56eca4471d58fd7caab6f881654ad8ece502e9f7d98e376fd29f",
+      "protocol_sha256": "43bc34b0e2d7b7a2eef2d22bc7b01836dfdfd999dcd3b966793c31425189f13b",
+      "zip_bad_file": null
+    },
+    {
+      "account": 2,
+      "rows": 14,
+      "seeds": [
+        123,
+        3407
+      ],
+      "models": 7,
+      "dataset_sha256": "d05306c5f89a56eca4471d58fd7caab6f881654ad8ece502e9f7d98e376fd29f",
+      "protocol_sha256": "43bc34b0e2d7b7a2eef2d22bc7b01836dfdfd999dcd3b966793c31425189f13b",
+      "zip_bad_file": null
+    },
+    {
+      "account": 3,
+      "rows": 7,
+      "seeds": [
+        777
+      ],
+      "models": 7,
+      "dataset_sha256": "d05306c5f89a56eca4471d58fd7caab6f881654ad8ece502e9f7d98e376fd29f",
+      "protocol_sha256": "43bc34b0e2d7b7a2eef2d22bc7b01836dfdfd999dcd3b966793c31425189f13b",
+      "zip_bad_file": null
+    }
+  ],
+  "no_new_training": true,
+  "selection": "Prior F06 TF-IDF 5000 selected by five-seed mean validation macro-F1; 10000 is sensitivity only"
+}

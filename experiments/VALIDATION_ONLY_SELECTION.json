@@ -1,0 +1,14 @@
+{
+  "best_model": "F06_PARALLEL_FLAT_CNN",
+  "selection_metric": "mean validation macro F1",
+  "rank": [
+    "F06_PARALLEL_FLAT_CNN",
+    "N16_RESIDUAL_PARALLEL_CONCAT",
+    "N18_LEXICAL_GUIDED_RESIDUAL_ATTENTION",
+    "F09_MODALITY_ATTENTION",
+    "F02_RESIDUAL_WORD_CNN",
+    "N17_RESIDUAL_MODALITY_ATTENTION"
+  ],
+  "all_five_seeds_complete": true,
+  "test_results_not_used": true
+}

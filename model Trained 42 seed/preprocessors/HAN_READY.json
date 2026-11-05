@@ -1,0 +1,12 @@
+{
+  "signature": "43625d6051ac7be6f85b7f6068ddcd930a8fa9b717f23648f6de75646730af41",
+  "protocol_sha256": "43bc34b0e2d7b7a2eef2d22bc7b01836dfdfd999dcd3b966793c31425189f13b",
+  "train_uid_sha256": "dea56263770bb750a133d564161925365a03f3d3809253d02881c120780cb6fe",
+  "fit_train_n": 20703,
+  "training_only": true,
+  "sklearn": "1.6.1",
+  "files": {
+    "tokenizer.json": "a98fe39d3cac96d87ef223682eddd2b4df7c41b0fa01c013565a8023bac21b8c",
+    "han.npy": "951ed3947f9da4a509aa82aa60f2e45f424014e064ab694e60766de3e5bc752b"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "stage": "NEURAL",
+  "nn": {
+    "sentences": 15,
+    "words": 30,
+    "vocabulary": 30000,
+    "embedding": 64,
+    "projection": 128,
+    "classes": 10,
+    "input_dropout": 0.4,
+    "dropout": 0.5,
+    "batch_size": 32,
+    "epochs": 15,
+    "patience": 3,
+    "lr": 0.001,
+    "lr_patience": 2,
+    "lr_factor": 0.1,
+    "min_lr": 1e-06,
+    "document_encoder": "variant-specific; groups1/2 attention only; group3 BiLSTM256 after bottleneck64"
+  },
+  "transformers": {
+    "epochs": 4,
+    "patience": 3,
+    "batch_size": 4,
+    "gradient_accumulation": 4,
+    "eval_batch_size": 8,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "max_length": 512,
+    "label_smoothing": 0.1,
+    "lr_factor": 0.1,
+    "lr_patience": 2,
+    "min_lr": 1e-06,
+    "checkpoint_min_delta": 0.0001,
+    "gradient_clip_norm": 1.0,
+    "precision": "float16 CUDA autocast",
+    "gradient_checkpointing": true
+  },
+  "neural_widths": [
+    256
+  ],
+  "tfidf_sizes": [
+    5000
+  ],
+  "seeds": [
+    42,
+    2026,
+    3407,
+    123,
+    777
+  ],
+  "selection": "mean validation macro F1; log loss, parameters, config ID break exact ties",
+  "class_weights": "balanced training-only frequencies; all neural/transformer fits; LR and SGD only among classical models",
+  "transformer_loss": "per-example unweighted smoothed CE multiplied by target class weight, then mean",
+  "transformer_remainder": "original loss /4 gradient accumulation policy retained for final partial accumulation",
+  "validation_loss": "unweighted, smoothing0.1",
+  "checkpoint": "minimum validation loss; neural min_delta0, transformer min_delta1e-4",
+  "precision": "neural float32; transformers CUDA float16 autocast",
+  "training_time_scope": "cumulative fit/validation time from retained checkpoints; optimizer-backup/export I/O excluded; discarded incomplete Keras epochs are not charged to the successful fit time",
+  "inference": "cached inputs; batch32 Keras, batch8 transformers; after fit workers stop; CPU classical",
+  "old_results_reused": false,
+  "protocol_sha256": "43bc34b0e2d7b7a2eef2d22bc7b01836dfdfd999dcd3b966793c31425189f13b"
+}

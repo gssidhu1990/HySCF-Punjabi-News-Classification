@@ -1,0 +1,104 @@
+{
+  "version": "HYSCF_FUSION6_COMPONENTS_FIVESEED_V1",
+  "status": "PASS",
+  "checks": [
+    {
+      "model": "F02_RESIDUAL_WORD_CNN",
+      "parameters": 3384268,
+      "synthetic_gradient": true,
+      "disk_reload_verified": true,
+      "uses_real_articles": false
+    },
+    {
+      "model": "F06_PARALLEL_FLAT_CNN",
+      "parameters": 3417100,
+      "synthetic_gradient": true,
+      "disk_reload_verified": true,
+      "uses_real_articles": false
+    },
+    {
+      "model": "F09_MODALITY_ATTENTION",
+      "parameters": 3384461,
+      "synthetic_gradient": true,
+      "disk_reload_verified": true,
+      "uses_real_articles": false
+    },
+    {
+      "model": "N16_RESIDUAL_PARALLEL_CONCAT",
+      "parameters": 3482956,
+      "synthetic_gradient": true,
+      "disk_reload_verified": true,
+      "uses_real_articles": false
+    },
+    {
+      "model": "N17_RESIDUAL_MODALITY_ATTENTION",
+      "parameters": 3450317,
+      "synthetic_gradient": true,
+      "disk_reload_verified": true,
+      "uses_real_articles": false
+    },
+    {
+      "model": "N18_LEXICAL_GUIDED_RESIDUAL_ATTENTION",
+      "parameters": 3466829,
+      "synthetic_gradient": true,
+      "disk_reload_verified": true,
+      "uses_real_articles": false
+    },
+    {
+      "model": "C00_WORD_ONLY",
+      "parameters": 2661900,
+      "synthetic_gradient": true,
+      "disk_reload_verified": true,
+      "uses_real_articles": false
+    },
+    {
+      "model": "C01_RESIDUAL_WORD_ONLY",
+      "parameters": 2727756,
+      "synthetic_gradient": true,
+      "disk_reload_verified": true,
+      "uses_real_articles": false
+    },
+    {
+      "model": "C02_FLAT_CNN_ONLY",
+      "parameters": 2020106,
+      "synthetic_gradient": true,
+      "disk_reload_verified": true,
+      "uses_real_articles": false
+    },
+    {
+      "model": "C03_TFIDF_ONLY",
+      "parameters": 657930,
+      "synthetic_gradient": true,
+      "disk_reload_verified": true,
+      "uses_real_articles": false
+    },
+    {
+      "model": "C04_WORD_CNN",
+      "parameters": 2760588,
+      "synthetic_gradient": true,
+      "disk_reload_verified": true,
+      "uses_real_articles": false
+    },
+    {
+      "model": "C05_WORD_TFIDF",
+      "parameters": 3318412,
+      "synthetic_gradient": true,
+      "disk_reload_verified": true,
+      "uses_real_articles": false
+    },
+    {
+      "model": "C06_CNN_TFIDF",
+      "parameters": 2676618,
+      "synthetic_gradient": true,
+      "disk_reload_verified": true,
+      "uses_real_articles": false
+    },
+    {
+      "model": "C07_RESIDUAL_WORD_CNN",
+      "parameters": 2826444,
+      "synthetic_gradient": true,
+      "disk_reload_verified": true,
+      "uses_real_articles": false
+    }
+  ]
+}

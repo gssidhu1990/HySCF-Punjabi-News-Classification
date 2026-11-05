@@ -1,0 +1,59 @@
+{
+  "study": "HYSCF_FUSION6_COMPONENTS_FIVESEED_V1",
+  "frozen_data_sha256": "d05306c5f89a56eca4471d58fd7caab6f881654ad8ece502e9f7d98e376fd29f",
+  "train": 20703,
+  "validation": 2589,
+  "test": 2589,
+  "seeds": [
+    42,
+    2026,
+    3407,
+    123,
+    777
+  ],
+  "models": [
+    "F02_RESIDUAL_WORD_CNN",
+    "F06_PARALLEL_FLAT_CNN",
+    "F09_MODALITY_ATTENTION",
+    "N16_RESIDUAL_PARALLEL_CONCAT",
+    "N17_RESIDUAL_MODALITY_ATTENTION",
+    "N18_LEXICAL_GUIDED_RESIDUAL_ATTENTION"
+  ],
+  "independent_controls": [
+    "C00_WORD_ONLY",
+    "C01_RESIDUAL_WORD_ONLY",
+    "C02_FLAT_CNN_ONLY",
+    "C03_TFIDF_ONLY",
+    "C04_WORD_CNN",
+    "C05_WORD_TFIDF",
+    "C06_CNN_TFIDF",
+    "C07_RESIDUAL_WORD_CNN"
+  ],
+  "original_architectures": [
+    "F02_RESIDUAL_WORD_CNN",
+    "F06_PARALLEL_FLAT_CNN",
+    "F09_MODALITY_ATTENTION"
+  ],
+  "novel_architectures": [
+    "N16_RESIDUAL_PARALLEL_CONCAT",
+    "N17_RESIDUAL_MODALITY_ATTENTION",
+    "N18_LEXICAL_GUIDED_RESIDUAL_ATTENTION"
+  ],
+  "classification_classes": [
+    "agriculture",
+    "auto",
+    "business",
+    "education",
+    "entertainment",
+    "lifestyle",
+    "politics",
+    "religion",
+    "sports",
+    "technology"
+  ],
+  "trainable_parameters_budget": "< 3972746",
+  "training_protocol": "archived core: Adam .001, batch32, 15 epochs, patience3, smoothed cross entropy .1, training-only balanced weights",
+  "selection": "validation macro F1 mean across five seeds, not test accuracy",
+  "exploratory_note": "All architectures were motivated by prior test-set inspection; no independent confirmatory holdout",
+  "control_note": "Each branch and each two-branch control is independently fitted; not merely masked at test time."
+}

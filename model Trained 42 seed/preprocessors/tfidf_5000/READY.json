@@ -1,0 +1,14 @@
+{
+  "signature": "dc6dc2ccfc1e2c8779b9572b985417e74a6f92df7e2ffd2a6ea06c7a6914bae3",
+  "dimension": 5000,
+  "protocol_sha256": "43bc34b0e2d7b7a2eef2d22bc7b01836dfdfd999dcd3b966793c31425189f13b",
+  "train_uid_sha256": "dea56263770bb750a133d564161925365a03f3d3809253d02881c120780cb6fe",
+  "fit_train_n": 20703,
+  "training_only": true,
+  "sklearn": "1.6.1",
+  "files": {
+    "matrix.npz": "23968acaf7cb4dce2c59b61b5b57ed41bf820427ba77946169f1badf01143cb8",
+    "vectorizer.pkl": "3f27cc17f7a6c5abfc5ba07341c1c491ec7637ac08a7dcba5bff5fbddb7ca2b5",
+    "vocabulary_idf.json": "e39158e87451886d81f160cf592198727586a1d3ba176e3d3ea0d641dc96934e"
+  }
+}

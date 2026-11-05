@@ -1,0 +1,15 @@
+﻿model,role,word_encoder,parallel_flat_cnn,tfidf_branch,parameters,archived_original_architecture,seeds,parameter_budget
+F02_RESIDUAL_WORD_CNN,full fusion,residual,False,True,3384268,True,42;2026;3407;123;777,3972746
+F06_PARALLEL_FLAT_CNN,full fusion,word,True,True,3417100,True,42;2026;3407;123;777,3972746
+F09_MODALITY_ATTENTION,full fusion,word,True,True,3384461,True,42;2026;3407;123;777,3972746
+N16_RESIDUAL_PARALLEL_CONCAT,full fusion,residual,True,True,3482956,False,42;2026;3407;123;777,3972746
+N17_RESIDUAL_MODALITY_ATTENTION,full fusion,residual,True,True,3450317,False,42;2026;3407;123;777,3972746
+N18_LEXICAL_GUIDED_RESIDUAL_ATTENTION,full fusion,residual,True,True,3466829,False,42;2026;3407;123;777,3972746
+C00_WORD_ONLY,trained component control,word,False,False,2661900,False,42;2026;3407;123;777,3972746
+C01_RESIDUAL_WORD_ONLY,trained component control,residual,False,False,2727756,False,42;2026;3407;123;777,3972746
+C02_FLAT_CNN_ONLY,trained component control,none,True,False,2020106,False,42;2026;3407;123;777,3972746
+C03_TFIDF_ONLY,trained component control,none,False,True,657930,False,42;2026;3407;123;777,3972746
+C04_WORD_CNN,trained component control,word,True,False,2760588,False,42;2026;3407;123;777,3972746
+C05_WORD_TFIDF,trained component control,word,False,True,3318412,False,42;2026;3407;123;777,3972746
+C06_CNN_TFIDF,trained component control,none,True,True,2676618,False,42;2026;3407;123;777,3972746
+C07_RESIDUAL_WORD_CNN,trained component control,residual,True,False,2826444,False,42;2026;3407;123;777,3972746

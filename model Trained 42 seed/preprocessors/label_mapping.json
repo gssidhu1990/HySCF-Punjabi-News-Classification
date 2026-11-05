@@ -1,0 +1,26 @@
+{
+  "classes": [
+    "agriculture",
+    "auto",
+    "business",
+    "education",
+    "entertainment",
+    "lifestyle",
+    "politics",
+    "religion",
+    "sports",
+    "technology"
+  ],
+  "label_to_id": {
+    "agriculture": 0,
+    "auto": 1,
+    "business": 2,
+    "education": 3,
+    "entertainment": 4,
+    "lifestyle": 5,
+    "politics": 6,
+    "religion": 7,
+    "sports": 8,
+    "technology": 9
+  }
+}

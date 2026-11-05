@@ -1,0 +1,30 @@
+{
+  "text": "title + one space + content; outer strip only",
+  "segment_delimiters": "[।!?]",
+  "sentences": 15,
+  "words_per_sentence": 30,
+  "padding": 0,
+  "padding_mask": false,
+  "truncation": "first segments and first tokenizer positions; empty segments retained",
+  "tfidf": "full title and content, training-only fit, word unigrams+bigrams",
+  "nn": {
+    "sentences": 15,
+    "words": 30,
+    "vocabulary": 30000,
+    "embedding": 64,
+    "projection": 128,
+    "classes": 10,
+    "input_dropout": 0.4,
+    "dropout": 0.5,
+    "batch_size": 32,
+    "epochs": 15,
+    "patience": 3,
+    "lr": 0.001,
+    "lr_patience": 2,
+    "lr_factor": 0.1,
+    "min_lr": 1e-06,
+    "document_encoder": "variant-specific; groups1/2 attention only; group3 BiLSTM256 after bottleneck64"
+  },
+  "corpus_articles": 25881,
+  "corpus_sources": 7
+}
